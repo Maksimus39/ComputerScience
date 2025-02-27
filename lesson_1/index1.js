@@ -28,7 +28,7 @@ arr[0] = temp2
 
 // -------------------------- цикл for ---------------------------
 
-const array = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const array = [1, 2, 3, 4];
 
 for (let i = 0; i < array.length; i++) {
     const item = array[i];
@@ -44,9 +44,23 @@ for (let i = 0; i < array.length; i++) {
     const item = array[i];
     const nextElement = array[i + 1];
     if (i + 1 === array.length) {
-        console.log(item, '-', 'not found')
+        // console.log(item, '-', 'not found')
     } else {
-        console.log(item, '-', nextElement);
+        // console.log(item, '-', nextElement);
+    }
+}
+
+
+//  показать текущий и предыдущий
+
+for (let i = 0; i < array.length; i++) {
+    const item = array[i];
+    const prevElement = array[i - 1];
+
+    if (i === 0) {
+        console.log('not element', '-', item);
+    } else {
+        console.log(prevElement, '-', item);
     }
 }
 
