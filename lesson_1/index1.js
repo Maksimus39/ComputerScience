@@ -58,12 +58,77 @@ for (let i = 0; i < array.length; i++) {
     const prevElement = array[i - 1];
 
     if (i === 0) {
-        console.log('not element', '-', item);
+        // console.log('not element', '-', item);
     } else {
-        console.log(prevElement, '-', item);
+        // console.log(prevElement, '-', item);
     }
 }
 
+let index = 0
+while (index < array.length) {
+    //console.log(array[index]);
+    index++;
+}
+
+
+//
+
+const fruits = ['apple', 'banana', 'apple', 'orange', 'banana'];
+
+let countApple = 0
+
+for (let i = 0; i < fruits.length; i++) {
+    let fruit = fruits[i];
+    if ('apple' === fruit) {
+        countApple++
+    }
+}
+//console.log(countApple);
+
+const banana = []
+for (let i = 0; i < fruits.length; i++) {
+    const fruit = fruits[i];
+    if ('banana' === fruit) {
+        banana.push(fruit)
+    }
+}
+//console.log(banana.length)
+
+
+// преобразование в Object
+const resultObject = []
+for (let i = 0; i < fruits.length; i++) {
+    const fruit = fruits[i];
+    resultObject.push({title: fruit, washed: false})
+}
+
+//console.log(resultObject)
+
+
+// поиск минимального значения в массиве
+
+const numbers = [1, 4, 7, 2, -1, 3, 5]
+
+let element = numbers[0];
+for (let i = 1; i < numbers.length; i++) {
+    if (element > numbers[i]) {
+        element = numbers[i];
+    }
+}
+//console.log(element)
+
+
+// поиск максимального элемента в массиве
+
+let maxElement = numbers[0]
+for (let i = 1; i < numbers.length; i++) {
+
+    if (numbers[i] > maxElement) {
+        maxElement = numbers[i];
+    }
+}
+
+//console.log(maxElement)
 
 
 
